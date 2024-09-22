@@ -1,0 +1,184 @@
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    align-items: center;
+    background: #0D192C;
+    height: 100vh;
+    width: 100vw;
+}
+
+.card {
+    width: 326px;
+    padding: 24px;
+    margin: 24px;
+    border-radius: 15px;
+    background: #15263F;
+    box-shadow: 0px 25px 50px 0px rgba(0, 0, 0, 0.10);
+}
+
+.image-container {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 8px;
+    cursor: pointer;
+    position: relative;
+}
+.image-container:active::after {
+    content: "";
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: #00FFF8;
+    opacity: 0.503;
+    border-radius: 8px;
+    transition: opacity 0.3s ease;
+    background-image: url();
+}
+
+
+.image-container img {
+    height: 100%;
+    width: 100%;
+}
+
+.image-container svg {
+    display: none;
+    position: absolute;
+}
+
+.image-container:focus svg, 
+.image-container:active svg {
+    display: block;
+}
+
+
+h3 {
+    margin-top: 24px;
+    color: var(--White, #FFF);
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-family: Outfit;
+    font-size: 22px;
+    font-style: normal;
+    font-weight: 600;
+    line-height: normal;
+    cursor: pointer;
+}
+
+h3:active {
+    color: #00FFF8
+}
+
+.description {
+    margin-top: 10px;
+    color: #8BACD9;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-family: Outfit;
+    font-size: 18px;
+    font-style: normal;
+    font-weight: 300;
+    line-height: 26px;
+}
+
+.details {
+    display: flex;
+    justify-content: space-between;
+    width: 100%;
+    height: 20px;
+    flex-shrink: 0;
+    margin-top: 20px;
+}
+
+.bitcoin {
+    display: flex;
+    justify-content: center;
+    gap: 6.5px;
+}
+
+.bitcoin-text {
+    display: flex;
+    align-items: center;
+    color: #00FFF8;
+    font-feature-settings: 'liga' off, 'clig' off;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: normal;
+
+    font-family: Outfit;
+}
+
+.days-left {
+    display: flex;
+    align-items: center;
+    gap: 6.5px;
+}
+
+span {
+    color: #8BACD9;
+    font-feature-settings: 'liga' off, 'clig' off;
+
+    font-family: Outfit;
+    font-size: 16px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom-content {
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+    margin-top: 24px;
+    padding-top: 20px;
+    border-top: 1px solid #2E405A;
+}
+
+.oval-image-container {
+    width: 33px;
+    height: 33px;
+
+    border-radius: 33px;
+    border: 1px solid var(--White, #FFF);
+    background: url(<path-to-image>) lightgray 50% / cover no-repeat;
+}
+
+.oval-image-container img {
+    width: 100%;
+    height: 100%;
+    border-radius: 33px;
+}
+
+.bottom-text {
+    display: flex;
+    gap: 5px;
+    margin-left: 20px;
+}
+
+.bottom-text p {
+    font-family: Outfit;
+    font-size: 15px;
+    font-style: normal;
+    font-weight: 400;
+    line-height: normal;
+}
+
+.bottom-text #first-p {
+    color: #8BACD9;
+}
+.bottom-text #second-p {
+    color: #fff;
+    cursor: pointer
+}
+
+.bottom-text #second-p:active {
+    color: #00FFF8
+}
